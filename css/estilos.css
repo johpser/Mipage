@@ -1,0 +1,494 @@
+/* estilos.css */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Kanit", "Alegreya", Arial, sans-serif;
+  background-image: url(/archivos/FONDO2.png);
+  background-size: cover;       /* cubre toda la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-attachment: fixed;
+}
+
+/* Contenedor que centra sólo la sección perfil.
+   Resta la altura aproximada del navbar con calc para mantener centrado verticalmente */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 500px); /* ajusta 70px según la altura real de tu navbar */
+  padding: 20px;
+  margin-top: 80px;
+}
+
+/* Tarjeta centrada (tu grid interno) */
+.perfil {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* foto fija + texto flexible */
+  gap: 40px;
+  align-items: center;
+  padding: 24px;
+  width: 90%;
+  max-width: 1190px;
+}
+
+.perfil-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 6px solid #28a745;
+}
+
+/* Info (titulo + descripcion apilados) */
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.perfil-titulo h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #222;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.perfil-subtitulo h2{
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #28a745; /* azul moderno (puedes cambiarlo) */
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.perfil-descripcion p {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #555;
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align:justify;
+}
+.botonesindex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;          /* espacio entre botones */
+  margin-top: 50px;
+  margin-left:218px ;
+}
+
+/* Botón 1: verde sólido */
+.boton1 {
+    background-color: #4CAF50;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.5), 
+        0 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: all 0.2s ease; 
+}
+
+.boton1:hover {
+    background-color: #43A047;
+    transform: translateY(-1px); 
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.6),
+        0 6px 8px rgba(0, 0, 0, 0.35);
+}
+
+.boton1:active {
+    background-color: #388E3C;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px);
+}
+/* Botón 2: transparente con borde verde */
+.boton2 {
+    background: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    
+    /* 💥 Sombra aumentada para el efecto "montado" (más notable) */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.3); 
+        
+    transition: all 0.3s ease;
+}
+
+.boton2:hover {
+    background-color: #28a745; 
+    color: #fff; 
+    transform: translateY(-2px); 
+    /* La sombra crece más cuando se levanta */
+    box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.boton2:active {
+    /* El botón se hunde al hacer clic */
+    transform: translateY(1px); 
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Opcional: pequeñas mejoras al navbar (no obligatorias) */
+.navbar { 
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05); 
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    
+}
+
+.navbar .nav-link:hover {
+  color: #28a745 !important; /* verde al pasar el puntero */
+}
+
+body {
+  margin: 0;
+  font-family: "Kanit", "Alegreya", Arial, sans-serif;
+  background-image: url(/archivos/FONDO2.png);
+  background-size: cover;       /* cubre toda la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-attachment: fixed; /* hace que el fondo no se mueva */
+}
+
+.perfil-img h2 {
+  margin-left: 10%;
+  padding-top: 5%;
+}
+.perfil-img p {
+  margin-left: 30%
+}
+
+.perfil-img {
+  padding-top: 35%;
+}
+
+.contenedor1 {
+  margin: -14px auto;
+  padding: 20px;
+  max-width: 1100px;
+  margin-left: 25%;
+}
+
+.habilidades {
+  display: flex;
+  justify-content:center;   /* centra horizontalmente */
+  align-items: flex-start;   /* alinea arriba */
+  gap: 40px;                 /* espacio entre las columnas */
+  text-align: center;
+}
+.habilidades-info {
+  text-align: center;
+  margin: 40px auto 20px; /* margen superior e inferior + centrado horizontal */
+  width: 100%;
+}
+
+.habilidades-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.habilidades.perfil-info h1 {
+  font-size: 2rem;
+  color: #222; /* cámbialo según tu paleta */
+  margin-left: 48%;
+  padding-bottom: 8px;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 60px;
+}
+/* Tamaños individuales */
+.codigo img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.resolucion img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.colaboracion img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Títulos */
+.habilidades h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.habilidades.perfil-info1 h1 {
+  font-size: 2rem;
+  color: #222; /* cámbialo según tu paleta */
+  margin-left: 6%;
+  padding-bottom: 8px;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 50px;
+  
+}
+
+.contenedor2 {
+  margin: -14px auto;
+  padding: 20px;
+  max-width: 1100px;
+  margin-left: 25%;
+}
+
+.herramientas div img {
+  width: 160px;        /* tamaño uniforme */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Sección que contiene las tarjetas/íconos */
+.herramientas {
+display: flex;
+justify-content:center;   /* centra horizontalmente */
+align-items: flex-start;   /* alinea arriba */               
+margin-left: 16%;
+width: 773px;
+border: 7px solid #28a745;
+border-radius: 52px;
+background-color: white;
+}
+
+.herramientas .html {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent; /* cámbialo si quieres card bg */
+  border-radius: 8px;
+}
+
+.herramientas .css {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.herramientas .visual {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.herramientas .boostrap {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+}
+
+/* Imágenes dentro de cada div de herramienta */
+
+
+.habilidades.perfil-info3 h1 {
+  font-size: 2rem;
+  color: #222; /* cámbialo según tu paleta */
+  margin-left: 28%;
+  padding-bottom: 8px;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  
+}
+
+.contenedor3 {
+margin: -14px auto;
+padding: 20px;
+max-width: 1100px;
+margin-left: 17%;
+}
+
+.otras div img {
+  width: 273px;        /* tamaño uniforme */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  margin-top: -30px;
+}
+
+.otras {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-left: 27.5%;
+width: 773px;
+border: 7px solid #28a745;
+border-radius: 52px;
+background-color: white;
+height: 23%;
+}
+
+.otras .git {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent; /* cámbialo si quieres card bg */
+  border-radius: 8px;
+}
+
+.otras .nube {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.otras .problemas {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.contenedorform
+{
+margin-top: -36px;
+padding: 20px;
+max-width: 1100px;
+margin-left: 34%;
+}
+
+/* Contenedor principal con Grid (2 columnas) */
+.forminfo {
+  display: grid;
+  grid-template-columns: 45% 40%; /* Puedes ajustar a fr: 3fr 2fr si prefieres */
+  gap: 2rem;
+  align-items: start;
+ 
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Estilo del formulario */
+form {
+  width: 100%;
+}
+
+/* Estilo del div de contacto */
+.contaco {
+  width: 100%;
+  font-family: "Courgette", cursive;
+  color: #222;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* Enlaces de redes */
+.redes a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+.redes a:hover {
+  color: #007BFF;
+}
+
+/* Inputs y textarea con estilo verde */
+input,
+textarea {
+  width: 100%; /* Puedes ajustar esto si quieres que se vea más ancho */
+  padding: 0.5rem;
+  border: 3px solid #28a745;
+  border-radius: 24px;
+}
+
+/* Botón con sombra y transición */
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 200px;
+  margin-left: 220px;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

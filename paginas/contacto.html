@@ -1,0 +1,103 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johpser Alejandro</title>
+
+  <!-- Bootstrap CSS (mantenlo) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS personalizado (siempre después de Bootstrap) -->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+</style>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav justify-content-center w-100">
+          <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="../paginas/sobremi.html">SOBRE MI</a></li>
+          <li class="nav-item"><a class="nav-link" href="../paginas/proyectos.html">SERVICIOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+
+  <main class="contenedor">
+    <section class="perfil">
+      <div class="perfil-img">
+        <img src="/archivos/fotomia1.jpg" alt="Mi foto de perfil">
+        <h2>Johpser Alejandro</h2>
+        <p>Desarrollador Web</p>
+      </div>
+
+      <div class="perfil-info">
+  <div class="perfil-titulo">
+    <h1>¡Contactame!</h1>
+  </div>
+  <div class="perfil-subtitulo">
+    <h2>Estoy disponible para nuevos proyectos y colaboraciones. Envíame un mensaje y te responderé lo antes posible.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<!-- Contenedor de habilidades -->
+<main class="contenedorform">
+  <section class="formulario">
+    <div class="forminfo">
+
+      <!-- FORMULARIO -->
+      <form action="https://formspree.io/f/xjkaonqb" method="POST">
+        <!-- Campos ocultos -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="index.html"> <!-- Recarga esta misma página -->
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+
+      <!-- INFORMACIÓN DE CONTACTO -->
+      <div class="contaco">
+        <h3>O encuéntrame en:</h3>
+        <div class="redes">
+          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
+  <img src="../archivos/linkeding.png" alt="LinkedIn" width="30">
+</a>
+
+<a href="https://github.com/johpser" target="_blank">
+  <img src="../archivos/github-mark.png" alt="GitHub" width="30">
+</a>
+        </div>
+        <p><strong>Email:</strong> Johpser@gmail.com</p>
+        <p><strong>Teléfono:</strong> (+51) 981 933 764</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
